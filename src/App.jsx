@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import MovieCard from "./Components/MovieCard";
 import SearchBar from "./Components/SearchBar";
 
-const API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
+const OMDB_API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch(`${API_URL}&s=${title}`);
+      const response = await fetch(`${OMDB_API_URL}&s=${title}`);
       const data = await response.json();
 
       if (data.Response === 'True')
