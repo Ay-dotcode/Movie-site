@@ -35,7 +35,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Movie Land</h1>
+      <header className="title">
+        <img alt="Screen Mode" className="mode" />
+        <h1>Movie Land</h1>
+      </header>
       <SearchBar searchMovies={searchMovies} />
       {loading ? (
         <div className="loading">
