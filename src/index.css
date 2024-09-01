@@ -38,11 +38,15 @@ body {
     cursor: pointer;
     color: #f9d3b4;
     position: absolute;
+    border-radius: 50%;
     font-family: var(--font-raleway);
+    transition: background-color 0.3s ease;
     content: url("/src/assets/light-mode.png");
 }
 
-.mode:hover {}
+.mode:hover {
+    background-color: #1c1d1f;
+}
 
 h1 {
     font-size: 3rem;
