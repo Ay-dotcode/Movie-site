@@ -26,21 +26,24 @@ body {
 }
 
 .title {
+    gap: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.mode {
-    left: 4rem;
+.mode,
+.titleEmptyy {
     width: 3.5rem;
-    cursor: pointer;
     color: #f9d3b4;
-    position: absolute;
-    border-radius: 50%;
     font-family: var(--font-raleway);
     transition: background-color 0.3s ease;
+}
+
+.mode {
+    cursor: pointer;
+    border-radius: 50%;
     content: url("/src/assets/light-mode.png");
 }
 
@@ -50,6 +53,7 @@ body {
 
 h1 {
     font-size: 3rem;
+    text-align: center;
     letter-spacing: 0.9px;
     background: linear-gradient(90deg,
             rgba(249, 211, 180, 1) 0%,

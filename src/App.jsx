@@ -38,6 +38,7 @@ function App() {
       <header className="title">
         <img alt="Screen Mode" className="mode" />
         <h1>Movie Land</h1>
+        <div className="titleEmptyy"></div>
       </header>
       <SearchBar searchMovies={searchMovies} />
       {loading ? (
