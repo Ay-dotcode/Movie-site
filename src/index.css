@@ -48,7 +48,12 @@ body {
 }
 
 .mode:hover {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     background-color: #1c1d1f;
+    -webkit-tap-highlight-color: transparent;
 }
 
 h1 {
