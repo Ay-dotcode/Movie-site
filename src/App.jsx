@@ -7,7 +7,7 @@ const API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_
 export const Theme = React.createContext(null);
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -45,7 +45,6 @@ function App() {
         <header className="title">
           <img alt="light theme" className="theme" />
           <h1>Movie Land</h1>
-          <div className="titleEmptyy"></div>
         </header>
         <SearchBar searchMovies={searchMovies} />
         {loading ? (
