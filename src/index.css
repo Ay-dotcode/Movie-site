@@ -210,6 +210,9 @@ h1 {
     font-weight: 500;
     color: #f0f0f0;
 }
+#light .movie div:nth-of-type(3) span {
+    color: #1c1d1f;
+}
 
 .movie div:nth-of-type(3) h3 {
     margin-top: 5px;
