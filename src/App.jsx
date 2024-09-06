@@ -43,7 +43,7 @@ function App() {
     <Theme.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
         <header className="title">
-          <img alt="light theme" className="theme" />
+          <img alt="light theme" className="theme" onClick={() => toggleTheme()} />
           <h1>Movie Land</h1>
         </header>
         <SearchBar searchMovies={searchMovies} />
