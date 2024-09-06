@@ -37,7 +37,7 @@ body {
 }
 
 .title {
-    gap: 1.5rem;
+    gap: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -234,6 +234,10 @@ h1 {
 @media screen and (max-width: 600px) {
     .app {
         padding: 4rem 2rem;
+    }
+
+    .title {
+        gap: 1rem;
     }
 
     .search {

@@ -45,6 +45,7 @@ function App() {
         <header className="title">
           <img alt="light theme" className="theme" onClick={() => toggleTheme()} />
           <h1>Movie Land</h1>
+          <div className="titleEmpty"></div>
         </header>
         <SearchBar searchMovies={searchMovies} />
         {loading ? (
