@@ -13,7 +13,12 @@
 }
 
 body {
+    background-color: #212426;
     font-family: var(--font-roboto);
+}
+
+body:has(#light) {
+    background-color: hsl(0, 0%, 100%);
 }
 
 .app {
@@ -32,7 +37,7 @@ body {
 }
 
 #light {
-    background-color: hsla(0, 0%, 100%, 0.8);
+    background-color: hsl(0, 0%, 100%);
     color: #1c1d1f;
 }
 
@@ -79,6 +84,7 @@ h1 {
 }
 
 #light h1 {
+    background: linear-gradient(90deg, rgba(249, 211, 180, 1) 0%, rgba(249, 211, 180, 0.3) 100%);
     background: linear-gradient(90deg, rgba(249, 211, 180, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-clip: text;
 }
@@ -169,6 +175,7 @@ h1 {
     top: 0;
     color: #f9d3b4;
 }
+
 #light .movie div:nth-of-type(1) {
     color: #1c1d1f;
 }
@@ -210,6 +217,7 @@ h1 {
     font-weight: 500;
     color: #f0f0f0;
 }
+
 #light .movie div:nth-of-type(3) span {
     color: #1c1d1f;
 }
