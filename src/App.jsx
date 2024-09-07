@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./Components/MovieCard";
 import SearchBar from "./Components/SearchBar";
+import Title from "./Components/Title";
 
 const API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
@@ -42,11 +43,7 @@ function App() {
   return (
     <Theme.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
-        <header className="title">
-          <img alt="light theme" className="theme" onClick={() => toggleTheme()} />
-          <h1>Muvie Land</h1>
-          <div className="titleEmpty"></div>
-        </header>
+        <Title title="Muvie Land" toggleTheme={toggleTheme} />
         <SearchBar searchMovies={searchMovies} />
         {loading ? (
           <div className="loading">
