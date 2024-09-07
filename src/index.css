@@ -214,7 +214,7 @@ h1 {
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 700;
     color: #f0f0f0;
 }
 
@@ -229,7 +229,7 @@ h1 {
 }
 
 #light .movie div:nth-of-type(3) h3 {
-    color: #1c1d1f;
+    color: hsl(27, 85%, 30%);
 }
 
 .movie:hover div:nth-of-type(2) {
@@ -237,7 +237,8 @@ h1 {
     opacity: 0.3;
 }
 
-.movie:hover div:nth-of-type(3) {
+.movie:hover div:nth-of-type(3),
+#light .movie:hover div:nth-of-type(3) {
     background-color: transparent;
 }
 
