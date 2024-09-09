@@ -13,7 +13,7 @@ function Toggle() {
                 className={styles.toggle}
                 checked={theme === "dark" ? true : false}
             />
-            <label htmlFor="check">Dark mode</label>
+            <label htmlFor="check"></label>
         </div>
     )
 }

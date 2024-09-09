@@ -21,7 +21,7 @@
 .toggle+label::before {
     width: 2rem;
     content: "";
-    height: 1rem;
+    height: 1.2rem;
     border-radius: 1rem;
     margin-right: .5rem;
     background-color: var(--toggle-bg);
@@ -32,7 +32,11 @@
     left: .2rem;
     width: .8rem;
     height: .8rem;
+    position: absolute;
     border-radius: 1rem;
-    /* position: absolute; */
     background-color: var(--toggle-fg);
+}
+
+.toggle:checked+label::after {
+    transform: translateX(100%);
 }
