@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import MovieCard from "./Components/MovieCard";
 import SearchBar from "./Components/SearchBar";
-import Title from "./Components/Title";
-
+import Toggle from './Components/Toggle/Toggle';
 const API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
-export const Theme = React.createContext(null);
+export const Theme = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -43,7 +42,8 @@ function App() {
   return (
     <Theme.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
-        <Title title="Muvie Land" toggleTheme={toggleTheme} />
+        <h1>Muvie Land</h1>
+        <Toggle />
         <SearchBar searchMovies={searchMovies} />
         {loading ? (
           <div className="loading">

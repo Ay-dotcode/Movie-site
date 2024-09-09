@@ -32,37 +32,6 @@ body {
     color: var(--text-color);
 }
 
-.title {
-    gap: 4rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.theme,
-.titleEmptyy {
-    width: 3.5rem;
-    font-family: var(--font-raleway);
-    transition: background-color 0.3s ease;
-}
-
-.theme {
-    cursor: pointer;
-    border-radius: 50%;
-    content: url("/src/assets/light-theme.png");
-}
-
-#light .theme {
-    padding: .5rem;
-    content: url("/src/assets/dark-theme.png");
-}
-
-.theme:hover {
-    user-select: none;
-    background-color: var(--hover-bg-color);
-    -webkit-tap-highlight-color: transparent;
-}
 
 h1 {
     font-size: 3rem;
