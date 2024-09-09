@@ -1,8 +1,8 @@
 @import url("../variables.css");
 
 .Toggle-container {
-    top: 4rem;
-    right: 4rem;
+    top: 3.5rem;
+    right: 3.5rem;
     position: absolute;
 }
 
@@ -23,8 +23,8 @@
     height: 1.5rem;
     border-radius: 1rem;
     margin-right: .5rem;
-    background-color: var(--toggle-bg);
     transition: all .3s ease-in-out;
+    background-color: var(--toggle-bg);
 }
 
 .toggle+label::after {
@@ -34,8 +34,8 @@
     height: 1rem;
     position: absolute;
     border-radius: 1rem;
-    background-color: var(--toggle-fg);
     transition: all .3s ease-in-out;
+    background-color: var(--toggle-fg);
 }
 
 .toggle:checked+label::after {
