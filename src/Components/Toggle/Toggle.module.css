@@ -1,1 +1,38 @@
-.Toggle-container {}
+@import url("../variables.css");
+
+.Toggle-container {
+    top: 2rem;
+    right: 2rem;
+    position: absolute;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.toggle+label {
+    display: flex;
+    cursor: pointer;
+    font-size: 1.5rem;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.toggle+label::before {
+    width: 2rem;
+    content: "";
+    height: 1rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
+    background-color: var(--toggle-bg);
+}
+
+.toggle+label::after {
+    content: "";
+    left: .2rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 1rem;
+    /* position: absolute; */
+    background-color: var(--toggle-fg);
+}
