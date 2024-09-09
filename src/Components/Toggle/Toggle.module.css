@@ -1,8 +1,8 @@
 @import url("../variables.css");
 
 .Toggle-container {
-    top: 3.5rem;
-    right: 3.5rem;
+    top: 3rem;
+    right: 2rem;
     position: absolute;
 }
 
