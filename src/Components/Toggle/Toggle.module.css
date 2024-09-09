@@ -1,8 +1,8 @@
 @import url("../variables.css");
 
-.Toggle-container {
-    top: 3rem;
-    right: 2rem;
+.toggle-container {
+    top: 3.5rem;
+    right: 3.5rem;
     position: absolute;
 }
 
@@ -40,4 +40,18 @@
 
 .toggle:checked+label::after {
     transform: translateX(100%);
+}
+
+@media screen and (max-width: 600px) {
+    .toggle-container {
+        top: 3rem;
+        right: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .toggle-container {
+        top: 3rem;
+        right: 2re
+    }
 }

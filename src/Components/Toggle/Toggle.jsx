@@ -6,7 +6,7 @@ function Toggle() {
     const { theme, toggleTheme } = useContext(Theme);
 
     return (
-        <div className={styles["Toggle-container"]}>
+        <div className={styles["toggle-container"]}>
             <input id='check'
                 type="checkbox"
                 onChange={toggleTheme}
