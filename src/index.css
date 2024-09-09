@@ -63,6 +63,7 @@ body:has(#light) {
 }
 
 #light .theme {
+    width: 3rem;
     content: url("/src/assets/dark-theme.png");
 }
 
@@ -85,7 +86,6 @@ h1 {
 
 #light h1 {
     background: linear-gradient(90deg, rgba(249, 211, 180, 1) 0%, rgba(249, 211, 180, 0.1) 100%);
-    /* background: linear-gradient(90deg, rgba(249, 211, 180, 1) 0%, rgba(0, 0, 0, 1) 100%); */
     background-clip: text;
 }
 
