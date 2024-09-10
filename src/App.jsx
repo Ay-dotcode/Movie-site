@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import MovieCard from "./Components/MovieCard";
 import SearchBar from "./Components/SearchBar";
 import Toggle from './Components/Toggle/Toggle';
+
 const API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
 export const Theme = createContext(null);
@@ -19,16 +20,16 @@ function App() {
   async function searchMovies(title, inputRef) {
     setLoading(true);
     setError("");
-  
+
     // Close the keyboard by blurring the input field
     if (inputRef && inputRef.current) {
       inputRef.current.blur();
     }
-  
+
     try {
       const response = await fetch(`${API_URL}&s=${title}`);
       const data = await response.json();
-  
+
       if (data.Response === "True") {
         setMovies(data.Search);
       } else {
@@ -41,10 +42,25 @@ function App() {
       setLoading(false);
     }
   }
-  
 
   useEffect(() => {
     searchMovies("Batman");
+
+    // Set the theme based on the user's system preference
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setTheme(mediaQuery.matches ? 'dark' : 'light');
+
+    // Listen for changes to the system preference
+    const handleChange = (e) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    // Cleanup listener on component unmount
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
   }, []);
 
   return (
