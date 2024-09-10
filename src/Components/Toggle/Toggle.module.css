@@ -13,8 +13,10 @@
 .toggle+label {
     display: flex;
     cursor: pointer;
+    user-select: none;
     align-items: center;
     color: var(--text-color);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .toggle+label::before {

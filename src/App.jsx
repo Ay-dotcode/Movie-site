@@ -16,15 +16,22 @@ function App() {
     setTheme((t) => (t === "dark" ? "light" : "dark"));
   }
 
-  async function searchMovies(title) {
+  async function searchMovies(title, inputRef) {
     setLoading(true);
     setError("");
+  
+    // Close the keyboard by blurring the input field
+    if (inputRef && inputRef.current) {
+      inputRef.current.blur();
+    }
+  
     try {
       const response = await fetch(`${API_URL}&s=${title}`);
       const data = await response.json();
-
-      if (data.Response === "True") setMovies(data.Search);
-      else {
+  
+      if (data.Response === "True") {
+        setMovies(data.Search);
+      } else {
         setMovies([]);
         setError(data.Error || "No movies found");
       }
@@ -34,6 +41,7 @@ function App() {
       setLoading(false);
     }
   }
+  
 
   useEffect(() => {
     searchMovies("Batman");
