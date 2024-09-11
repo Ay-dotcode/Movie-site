@@ -4,44 +4,68 @@
     top: 3.5rem;
     right: 3.5rem;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10; /* Ensures toggle is on top */
+    transition: all 0.3s ease;
 }
 
 .toggle {
     visibility: hidden;
 }
 
-.toggle+label {
+.toggle + label {
     display: flex;
     cursor: pointer;
     user-select: none;
     align-items: center;
-    color: var(--text-color);
     -webkit-tap-highlight-color: transparent;
-}
-
-.toggle+label::before {
-    width: 2.5rem;
-    content: "";
+    position: relative;
+    width: 3rem; /* Updated width for a modern look */
     height: 1.5rem;
-    border-radius: 1rem;
-    margin-right: .5rem;
-    transition: all .3s ease-in-out;
-    background-color: var(--toggle-bg);
+    border-radius: 1.5rem;
+    background-color: var(--toggle-bg, #ccc); /* Fallback color */
+    transition: background-color 0.3s ease;
 }
 
-.toggle+label::after {
+.toggle + label::before {
     content: "";
-    left: .2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    background-color: var(--toggle-bg, #ccc);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.toggle + label::after {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
     width: 1rem;
     height: 1rem;
-    position: absolute;
-    border-radius: 1rem;
-    transition: all .3s ease-in-out;
-    background-color: var(--toggle-fg);
+    border-radius: 50%;
+    background-color: var(--toggle-fg, #fff); /* Fallback color */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhance 3D effect */
 }
 
-.toggle:checked+label::after {
-    transform: translateX(100%);
+.toggle:checked + label {
+    background-color: var(--toggle-active-bg); 
+}
+
+.toggle:checked + label::before {
+    background-color: var(--toggle-active-bg, hsla(240, 100%, 50%, 0.4));
+}
+
+.toggle:checked + label::after {
+    transform: translateX(1.5rem); /* Moves the knob to the right */
+    background-color: var(--toggle-active-fg, #fff); /* Active foreground color */
 }
 
 @media screen and (max-width: 600px) {
