@@ -11,7 +11,7 @@ function Toggle() {
                 type="checkbox"
                 onChange={toggleTheme}
                 className={styles.toggle}
-                checked={theme === "dark" ? true : false}
+                checked={theme === "dark"}
             />
             <label htmlFor="check">
                 <img alt="Toggle img" className={styles["toggle-img"]} />
