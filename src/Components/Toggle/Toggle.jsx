@@ -14,7 +14,7 @@ function Toggle() {
                 checked={theme === "dark" ? true : false}
             />
             <label htmlFor="check">
-                <img src='/src/assets/dark-theme.png' alt="Toggle img" className={styles["toggle-img"]} />
+                <img alt="Toggle img" className={styles["toggle-img"]} />
             </label>
         </div>
     )
