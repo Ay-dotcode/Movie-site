@@ -26,7 +26,7 @@
     border-radius: 1.5rem;
     transition: background-color 0.3s ease;
     -webkit-tap-highlight-color: transparent;
-    background-color: var(--toggle-bg, #ccc);
+    background-color: var(--toggle-bg);
 }
 
 .toggle+label::before {
@@ -38,7 +38,7 @@
     position: absolute;
     border-radius: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--toggle-bg, #ccc);
+    background-color: var(--toggle-bg);
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -51,21 +51,21 @@
     border-radius: 50%;
     position: absolute;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: var(--toggle-fg, #fff);
+    background-color: var(--toggle-fg);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .toggle:checked+label {
-    background-color: var(--toggle-active-bg);
+    background-color: var(--toggle-bg);
 }
 
 .toggle:checked+label::before {
-    background-color: var(--toggle-active-bg, hsla(240, 100%, 50%, 0.4));
+    background-color: var(--toggle-bg);
 }
 
 .toggle:checked+label::after {
     transform: translateX(1.5rem);
-    background-color: var(--toggle-active-fg, #fff);
+    background-color: var(--toggle-fg);
 }
 
 @media screen and (max-width: 600px) {
