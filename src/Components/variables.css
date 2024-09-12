@@ -3,8 +3,8 @@
     --font-raleway: "Raleway", sans-serif;
 
     /* Dark Theme Colors */
-    --toggle-bg: hsl(0, 0%, 40%);
-    --toggle-fg: hsl(0, 0%, 90%);
+    --toggle-bg: hsl(250, 70%, 30%);
+    --toggle-fg: hsl(200, 100%, 60%);
     --bg-color: #212426;
     --text-color: #f9d3b4;
     --input-bg-color: #1f2123;
@@ -21,8 +21,8 @@
 
 #light {
     /* Light Theme Overrides */
-    --toggle-bg: hsl(0, 0%, 60%);
-    --toggle-fg: hsl(0, 0%, 10%);
+    --toggle-bg: hsl(27, 85%, 80%);
+    --toggle-fg: hsl(30, 85%, 60%);
     --bg-color: hsl(0, 0%, 100%);
     --text-color: #1c1d1f;
     --input-bg-color: #ffffff;
