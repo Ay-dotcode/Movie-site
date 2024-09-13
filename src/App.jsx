@@ -66,8 +66,10 @@ function App() {
   return (
     <Theme.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
+        <nav>
+          <Toggle />
+        </nav>
         <h1>Muvie Land</h1>
-        <Toggle />
         <SearchBar searchMovies={searchMovies} />
         {loading ? (
           <div className="loading">

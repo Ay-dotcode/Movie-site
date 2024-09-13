@@ -1,9 +1,6 @@
 .toggle-container {
     z-index: 2;
-    top: 3.5rem;
-    right: 3.5rem;
     display: flex;
-    position: absolute;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;

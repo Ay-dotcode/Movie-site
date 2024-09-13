@@ -19,7 +19,7 @@ body:has(#dark) {
 }
 
 .app {
-    padding: 4rem;
+    padding: 4rem 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -34,6 +34,15 @@ body:has(#dark) {
 #light {
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+nav {
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    margin: 0 1rem;
+    justify-content: end;
+
 }
 
 h1 {
