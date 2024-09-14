@@ -32,8 +32,8 @@ body:has(#dark) {
 }
 
 #light {
-    background-color: var(--bg-color);
     color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 nav {
@@ -54,7 +54,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     width: fit-content;
     transition: background-color 0.3s ease;
- }
+}
 
 .search {
     width: 71%;

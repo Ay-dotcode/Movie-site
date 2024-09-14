@@ -33,6 +33,6 @@
     --input-box-shadow: 5px 5px 7px #d9d9d9, -5px -5px 7px #ffffff;
     --movie-bg-color: hsl(0, 0%, 89%);
     --movie-subtitle-color: #1c1d1f;
-    --gradient-color: hsl(30, 85%, 50%);
-    --gradient-transparent: hsla(27, 85%, 84%, .2);
+    --gradient-color: hsl(35, 80%, 58%);
+    --gradient-transparent: hsla(27, 85%, 84%, .3);
 }
