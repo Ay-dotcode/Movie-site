@@ -6,7 +6,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -48,12 +48,12 @@ h1 {
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.9px;
-    background-clip: text;
-    background: linear-gradient(90deg, var(--gradient-color) 0%, var(--gradient-transparent) 100%);
+    background: var(--h1-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     width: fit-content;
-    transition: background-color 0.3s ease;
+    transition: all 3s ease-in-out;
 }
 
 .search {
