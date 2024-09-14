@@ -42,19 +42,19 @@ nav {
     display: flex;
     margin: 0 1rem;
     justify-content: end;
-
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.9px;
-    background: linear-gradient(90deg, var(--gradient-color) 0%, var(--gradient-transparent) 100%);
     background-clip: text;
+    background: linear-gradient(90deg, var(--gradient-color) 0%, var(--gradient-transparent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
-}
+    transition: background-color 0.3s ease;
+ }
 
 .search {
     width: 71%;
