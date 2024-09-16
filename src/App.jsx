@@ -44,7 +44,7 @@ function App() {
   }
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("movie");
 
     // Set the theme based on the user's system preference
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
