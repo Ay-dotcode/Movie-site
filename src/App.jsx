@@ -50,7 +50,6 @@ function App() {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     setTheme(mediaQuery.matches ? 'dark' : 'light');
 
-    // Listen for changes to the system preference
     const handleChange = (e) => {
       setTheme(e.matches ? 'dark' : 'light');
     };
