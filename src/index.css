@@ -19,8 +19,8 @@ body:has(#dark) {
 }
 
 .app {
-    padding: 4rem 2rem;
     display: flex;
+    padding: 4rem 2rem;
     align-items: center;
     flex-direction: column;
     justify-content: center;
