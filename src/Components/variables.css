@@ -26,10 +26,10 @@
     --bg-color: hsl(0, 0%, 100%);
     --toggle-bg: hsl(27, 85%, 80%);
     --toggle-fg: hsl(30, 85%, 60%);
-    --movie-subtitle-color: #1c1d1f;
     --movie-bg-color: hsl(0, 0%, 89%);
     --input-text-color: hsl(220, 5%, 12%);
     --movie-title-color: hsl(27, 85%, 30%);
+    --movie-subtitle-color: hsl(220, 5%, 12%);
     --toggle-img: url("/src/assets/light-theme.png");
     --gradient-transparent: hsla(27, 85%, 84%, .3);
     --input-box-shadow: 5px 5px 7px #d9d9d9, -5px -5px 7px #ffffff;
