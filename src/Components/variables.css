@@ -21,10 +21,10 @@
 
 #light {
     /* Light Theme Overrides */
-    --text-color: #1c1d1f;
     --bg-color: hsl(0, 0%, 100%);
     --toggle-bg: hsl(27, 85%, 80%);
     --toggle-fg: hsl(30, 85%, 60%);
+    --text-color: hsl(220, 5%, 12%);
     --movie-bg-color: hsl(0, 0%, 89%);
     --input-bg-color: hsl(0, 0%, 100%);
     --input-text-color: hsl(220, 5%, 12%);
