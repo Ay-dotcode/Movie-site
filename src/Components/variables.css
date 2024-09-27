@@ -9,10 +9,10 @@
     --movie-bg-color: #343739;
     --input-bg-color: #1f2123;
     --input-text-color: #a1a1a1;
-    --movie-title-color: #f9d3b4;
     --toggle-bg: hsl(250, 70%, 30%);
     --toggle-fg: hsl(200, 100%, 60%);
     --hover-bg-color: hsl(220, 5%, 50%);
+    --movie-title-color: h.sl(27, 85%, 84%);
     --movie-subtitle-color: hsl(0, 0%, 94%);
     --toggle-img: url("/src/assets/dark-theme.png");
     --input-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
