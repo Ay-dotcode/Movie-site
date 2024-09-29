@@ -7,9 +7,9 @@
     --text-color: #f9d3b4;
     --movie-hover-opacity: 0.3;
     --movie-bg-color: #343739;
-    --input-bg-color: #1f2123;
     --toggle-bg: hsl(250, 70%, 30%);
     --toggle-fg: hsl(200, 100%, 60%);
+    --input-bg-color: hsl(210, 6%, 13%);
     --input-text-color: hsl(0, 0%, 63%);
     --hover-bg-color: hsl(220, 5%, 50%);
     --movie-title-color: h.sl(27, 85%, 84%);
