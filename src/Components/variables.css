@@ -4,9 +4,9 @@
 
     /* Dark Theme Colors */
     --bg-color: #212426;
-    --text-color: #f9d3b4;
     --movie-hover-opacity: 0.3;
     --toggle-bg: hsl(250, 70%, 30%);
+    --text-color: hsl(27, 85%, 84%);
     --toggle-fg: hsl(200, 100%, 60%);
     --input-bg-color: hsl(210, 6%, 13%);
     --movie-bg-color: hsl(204, 5%, 21%);
