@@ -3,8 +3,8 @@
     --font-raleway: "Raleway", sans-serif;
 
     /* Dark Theme Colors */
-    --bg-color: #212426;
     --movie-hover-opacity: 0.3;
+    --bg-color: hsl(204, 7%, 14%);
     --toggle-bg: hsl(250, 70%, 30%);
     --text-color: hsl(27, 85%, 84%);
     --toggle-fg: hsl(200, 100%, 60%);
