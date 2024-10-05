@@ -33,5 +33,5 @@
     --toggle-img: url("/src/assets/light-theme.png");
     --gradient-transparent: hsla(27, 85%, 84%, .3);
     --input-box-shadow: 5px 5px 7px #d9d9d9, -5px -5px 7px #ffffff;
-    --h1-color: linear-gradient(to right, hsl(35, 80%, 58%) 0%, hsla(27, 85%, 84%, .3) 100%);
+    --h1-color: linear-gradient(to right, #eaa23e 0%, hsla(27, 85%, 84%, .3) 100%);
 }
