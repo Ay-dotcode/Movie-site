@@ -16,7 +16,7 @@
     --movie-subtitle-color: hsl(0, 0%, 94%);
     --toggle-img: url("/src/assets/dark-theme.png");
     --input-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-    --h1-color: linear-gradient(to right, #f9d3b4 0%, #fad4b500 100%);
+    --h1-color: linear-gradient(to right, #f9d3b4 0%, hsla(27, 87%, 85%, 0) 100%);
 }
 
 #light {
